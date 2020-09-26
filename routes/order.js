@@ -7,10 +7,10 @@ const { updateStock } = require("../controllers/product");
 
 const {
   getOrderById,
-  createOrder,
   getAllOrders,
   getOrderStatus,
   updateStatus,
+  createOrder,
 } = require("../controllers/order");
 const { route } = require("./product");
 
@@ -19,7 +19,6 @@ router.param("userId", getUserById);
 router.param("orderId", getOrderById);
 
 //Actual routes
-
 router.post(
   "/order/create/:userId",
   isSignedIn,

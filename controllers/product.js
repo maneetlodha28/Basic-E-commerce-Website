@@ -63,7 +63,7 @@ exports.createProduct = (req, res) => {
 };
 
 exports.getProduct = (req, res) => {
-  req.product.photo = underfined;
+  req.product.photo = undefined;
   return res.json(req.product);
 };
 //Middleware
@@ -135,7 +135,7 @@ exports.getAllProducts = (req, res) => {
   Product.find()
     .select("-photo")
     .populate("category")
-    .sort([sortBy, "asc"])
+    .sort([[sortBy, "asc"]])
     .limit(limit)
     .exec((err, products) => {
       if (err) {
@@ -172,6 +172,7 @@ exports.updateStock = (req, res, next) => {
   });
 
   Product.bulkWrite(myOperations, {}, (err, products) => {
+    // monogose bulk write
     if (err) {
       return res.status(400).json({
         error: "Bulk Operation Failed",

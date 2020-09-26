@@ -32,7 +32,7 @@ exports.getCategory = (req, res) => {
 };
 
 exports.getAllCategory = (req, res) => {
-  Category.findById().execute((err, categories) => {
+  Category.find().exec((err, categories) => {
     if (err) {
       return res.status(400).json({
         error: "No categories found",
@@ -68,7 +68,7 @@ exports.removeCategory = (req, res) => {
       });
     }
     res.json({
-      message: "Successfull deleted",
+      message: "Successfully deleted",
     });
   });
 };
