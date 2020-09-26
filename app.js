@@ -28,11 +28,14 @@ mongoose
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(cors());
-app.get('/', function(req, res) {
-  res.json({
-    Message:"hello"
-  });
+
 //My Routes
+
+app.get("/", function (req, res) {
+  res.json({
+    Message: "Hello",
+  });
+});
 app.use("/api", authRoutes);
 app.use("/api", userRoutes);
 app.use("/api", categoryRoutes);
