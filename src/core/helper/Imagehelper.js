@@ -14,6 +14,7 @@ const Imagehelper = ({ product }) => {
         alt="photo"
         style={{ maxHeight: "100%", maxWidth: "100%" }}
         className="mb-3 rounded"
+        alt="Photo"
       />
     </div>
   );
