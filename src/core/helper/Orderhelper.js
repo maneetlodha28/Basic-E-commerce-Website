@@ -3,7 +3,7 @@ const { API } = require("../../backend");
 export const createOrder = (userId, token, orderData) => {
   return fetch(`${API}/order/create/${userId}`, {
     method: "POST",
-    header: {
+    headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
       Authorization: `Bearer ${token}`,
@@ -11,7 +11,7 @@ export const createOrder = (userId, token, orderData) => {
     body: JSON.stringify({ order: orderData }),
   })
     .then((response) => {
-      return Response.json();
+      return response.json();
     })
     .catch((err) => console.log(err));
 };

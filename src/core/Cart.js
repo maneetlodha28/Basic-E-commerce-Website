@@ -5,6 +5,7 @@ import Base from "./Base";
 import Card from "./card";
 import { loadCart } from "./helper/carthelper";
 import Payment from "./Payment";
+import { isAuthenticated } from "../auth/helper";
 
 const Cart = () => {
   const [products, setProducts] = useState([]);
@@ -50,7 +51,7 @@ const Cart = () => {
           )}
         </div>
         <div className="col-6">
-          <Payment products ={products} setReload={setReload} />
+          <Payment products={products} setReload={setReload} />
         </div>
       </div>
     </Base>
