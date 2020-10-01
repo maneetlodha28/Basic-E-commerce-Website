@@ -17,8 +17,9 @@ const Cart = () => {
 
   const loadAllProducts = (products) => {
     return (
-      <div>
+      <div className>
         <h2>This section is to load products </h2>
+
         {products.map((product, index) => (
           <Card
             key={index}

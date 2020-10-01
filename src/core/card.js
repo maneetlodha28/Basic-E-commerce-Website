@@ -57,7 +57,10 @@ const Card = ({
   };
 
   return (
-    <div className="card text-white bg-dark border border-info ">
+    <div
+      className="card text-white bg-dark border border-info align-center "
+      style={{ width: 18 + "rem" }}
+    >
       <div className="card-header lead">{cardTitle}</div>
       <div className="card-body">
         {getARedirect(redirect)}
