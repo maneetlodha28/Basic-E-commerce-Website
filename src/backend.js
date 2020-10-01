@@ -1,1 +1,1 @@
-export const API = "https://evening-brushlands-40529.herokuapp.com/";
+export const API = process.env.REACT_APP_BACKEND;
