@@ -19,23 +19,23 @@ exports.getToken = (req, res) => {
 };
 
 exports.processPayment = (req, res) => {
-  let nonceFromTheClient = rew.body.paymentMethodNonce;
+  let nonceFromTheClient = req.body.paymentMethodNonce;
 
   let amountFromtheClient = req.body.amount;
   gateway.transaction.sale(
     {
       amount: amountFromtheClient,
       paymentMethodNonce: nonceFromTheClient,
-      deviceData: deviceDataFromTheClient,
+
       options: {
         submitForSettlement: true,
       },
     },
     function (err, result) {
       if (err) {
-        res.status(500).send(err);
+        res.status(500).json(error);
       } else {
-        res.send(result);
+        res.json(result);
       }
     }
   );
