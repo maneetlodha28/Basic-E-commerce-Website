@@ -24,18 +24,15 @@ export default function Home() {
   }, []);
 
   return (
-    <Base title="Home Page" description="Welcom to the T-Shirt Store">
+    <Base title="" description="Welcome to the T-Shirt Store">
       <div className="row text-center">
-        <h2
-          className="textwhite"
-          style={{ color: "gray", fontStyle: "italic" }}
-        >
+        <h2 style={{ color: "gray", fontStyle: "italic", textAlign: "start" }}>
           All T-Shirts
         </h2>
         <div className="row justify-content-center">
           {products.map((product, index) => {
             return (
-              <div key={index} className="col-auto mb-2">
+              <div key={index} className="col-auto mb-3">
                 <Card product={product} />
               </div>
             );
