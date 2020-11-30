@@ -46,8 +46,9 @@ const Payment = ({ products, setReload = (f) => f, reload = undefined }) => {
               <button
                 className="btn  btn-block btn-success"
                 onClick={onPurchase}
+                style={{ fontWeight: "bold" }}
               >
-                PLACE ORDER
+                Place Order
               </button>
             </div>
           ) : (
