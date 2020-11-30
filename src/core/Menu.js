@@ -3,7 +3,7 @@ import { Link, withRouter } from "react-router-dom";
 import { signout, isAuthenticated } from "../auth/helper";
 
 const currentTab = (history, path) => {
-  // checking if link visited previously or not
+  // checking if link visited previously or notbackground-color: #4158D0;
   if (history.location.pathname === path) {
     return { color: "#F4C724" };
   } else {

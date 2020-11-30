@@ -8,12 +8,12 @@ const Imagehelper = ({ product }) => {
     : `https://images.pexels.com/photos/428311/pexels-photo-428311.jpeg?cs=srgb&dl=pexels-spencer-selover-428311.jpg&fm=jpg`;
 
   return (
-    <div className="rounded border border-success p-2">
+    <div>
       <img
         src={imageurl}
         alt="photo"
         style={{ maxHeight: "100%", maxWidth: "100%" }}
-        className="mb-3 rounded h-30 w-60"
+        className="card-img-top img-fluid"
         alt="Photo"
       />
     </div>

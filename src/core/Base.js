@@ -4,13 +4,13 @@ import Menu from "./Menu";
 const Base = ({
   title = "My title",
   description = "My Description",
-  className = "bg-dark text-white p-4",
+  className = "bg-dark text-white p-2",
   children,
 }) => (
   <div>
     <Menu />
     <div className="container-fluid">
-      <div className="jumbotron bg-dark text-white text-center">
+      <div className="jumbotron bg-dark  text-white text-center">
         <h2 className="display-">{title} </h2>
         <p className="lead">{description}</p>
       </div>
