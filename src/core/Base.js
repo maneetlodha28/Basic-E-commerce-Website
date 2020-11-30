@@ -16,9 +16,9 @@ const Base = ({
       </div>
       <div className={className}>{children}</div>
     </div>
-    <footer className="footer bg-dark mt-auto py-2">
+    <footer className="footer bg-dark mt-auto py-4">
       <div className="conatiner-fluid bg-danger text-white text-center py-3">
-        <h4>If you got any questions feel free to reach out:</h4>
+        <h4>If you got any questions feel free to reach out</h4>
         <a href="mailto:maneetlodha28@gmail.com" className="btn btn-warning">
           Contact us{" "}
         </a>

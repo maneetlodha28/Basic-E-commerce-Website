@@ -33,11 +33,11 @@ const AdminDashboard = () => {
               Manage Product
             </Link>
           </li>
-          <li className="list-group-item">
+          {/* <li className="list-group-item">
             <Link to="/admin/orders" className="nav-link text-danger">
               Manage Orders
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     );
@@ -70,9 +70,11 @@ const AdminDashboard = () => {
       description="Manage all your products here"
       className="container bg-danger p-4"
     >
-      <div className="row">
-        <div className="col-3">{adminLeftSide()}</div>
-        <div className="col-9">{adminRightSide()}</div>
+      <div className="row ">
+        <div className="col-auto">{adminLeftSide()}</div>
+        <div className="col-9" style={{ padding: 1 + "rem" }}>
+          {adminRightSide()}
+        </div>
       </div>
     </Base>
   );

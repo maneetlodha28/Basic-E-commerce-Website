@@ -47,18 +47,18 @@ const Payment = ({ products, setReload = (f) => f, reload = undefined }) => {
                 className="btn  btn-block btn-success"
                 onClick={onPurchase}
               >
-                Buy
+                PLACE ORDER
               </button>
             </div>
           ) : (
-            <h3> add something to cart</h3>
+            <h3> Add something to checkout</h3>
           )}
         </div>
       );
     } else {
       return (
         <div>
-          <h3>Please Signin to buy a product</h3>
+          <h3>Please Signin to place order</h3>
         </div>
       );
     }
@@ -111,9 +111,9 @@ const Payment = ({ products, setReload = (f) => f, reload = undefined }) => {
 
   return (
     <div>
-      <h3>
-        Your Bill is <span>&#8377;</span>
-        {getAmount()}
+      <h3 style={{ paddingTop: 1 + "rem" }}>
+        {" "}
+        {getAmount() > 0 ? "Total Amount ₹" + getAmount() : ""}
       </h3>
       {showbtdropIn()}
       {}

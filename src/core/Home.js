@@ -26,7 +26,12 @@ export default function Home() {
   return (
     <Base title="Home Page" description="Welcom to the T-Shirt Store">
       <div className="row text-center">
-        <h1 className="textwhite">All T-Shirts</h1>
+        <h2
+          className="textwhite"
+          style={{ color: "gray", fontStyle: "italic" }}
+        >
+          All T-Shirts
+        </h2>
         <div className="row justify-content-center">
           {products.map((product, index) => {
             return (

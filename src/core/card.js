@@ -57,7 +57,7 @@ const Card = ({
   };
 
   return (
-    <div class="card" style={{ width: 25 + "rem" }}>
+    <div class="card" style={{ width: 20 + "rem" }}>
       {getARedirect(redirect)}
       <Imagehelper product={product} />
       <div class="card-body">
