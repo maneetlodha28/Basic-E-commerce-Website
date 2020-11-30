@@ -64,7 +64,7 @@ const Menu = ({ history }) => (
       {isAuthenticated() && (
         <li className="nav-item">
           <span
-            className="nav-link text-warning"
+            className="nav-link text-white"
             onClick={() => {
               signout(() => {
                 history.push("/");
