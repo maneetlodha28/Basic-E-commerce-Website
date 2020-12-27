@@ -1,4 +1,12 @@
 # Basic-E-commerce-Website
-This is a basic t-shirt selling website with all the fucntionalities.
-The  Code is divided in Backened and Frontend, with their seperate branch as of now,will combine once the project is completed. As of today, 14 August 2020, I have completed the backend part and started on frontend with Bootstrap and Angular Js.
-I will also be adding the payment gateway in coming days.
+This is a basic t-shirt selling website with all the CRUD fucntionalities added for the admin. 
+The  Code is divided in Backened and Frontend. Frontend hosted on **Netfliy** and backend on **Heroku**. 
+Their is a admin login id: admi@admin.com, password: 12345 for accessing admin features.
+### Both frontend and backend are on the same branch, and I know this is not the right way to use the git. 
+
+
+
+
+
+
+
